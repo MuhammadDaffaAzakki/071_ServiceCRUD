@@ -10,3 +10,11 @@ express.urlencoded({
     extended: true,
  })
 )
+const pool = new Pool({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'mahasiswa',
+    password: '12345',
+    port: 5432,
+})
+
